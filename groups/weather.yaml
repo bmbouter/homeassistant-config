@@ -1,0 +1,11 @@
+weather_group:
+  name: Weather
+  view: yes
+  entities:
+    - sensor.pws_weather_1d
+    - sensor.pws_temp_high_1d_f
+    - sensor.pws_temp_f
+    - sensor.pws_temp_low_1d_f
+    - sensor.pws_precip_1d
+    - sensor.pws_precip_1d_mm
+    - sensor.pws_alerts

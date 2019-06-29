@@ -1,0 +1,13 @@
+default_view:
+  view: yes
+  icon: mdi:home 
+  entities:
+    - climate.ct101_thermostat_cooling_1
+    - climate.ct101_thermostat_heating_1
+    - group.lights
+lights:
+  name: Lights
+  entities:
+    - light.bedroom_lamp
+    - light.brian_nightstand
+    - light.hot_tub_time_machine

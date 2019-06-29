@@ -1,0 +1,43 @@
+- id: cool_am_weekday
+  alias: Weekdays @ 08:30 set to 74
+  trigger:
+    platform: time
+    at: '08:30:00'
+  condition:
+    condition: time
+    weekday:
+      - mon
+      - tue
+      - wed
+      - thu
+      - fri
+  action:
+    service: climate.set_temperature
+    data:
+      entity_id: climate.ct101_thermostat_cooling_1
+      temperature: 74
+- id: cool_am_weekend
+  alias: Weekends @ 10:30 set to 74
+  trigger:
+    platform: time
+    at: '10:30:00'
+  condition:
+    condition: time
+    weekday:
+      - sat
+      - sun
+  action:
+    service: climate.set_temperature
+    data:
+      entity_id: climate.ct101_thermostat_cooling_1
+      temperature: 74
+- id: cool_pm_nighttime
+  alias: 21:00 set to 70
+  trigger:
+    platform: time
+    at: '21:00:00'
+  action:
+    service: climate.set_temperature
+    data:
+      entity_id: climate.ct101_thermostat_cooling_1
+      temperature: 70
