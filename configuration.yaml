@@ -23,7 +23,6 @@ frontend:
 config:
 
 http:
-  api_password: !secret api_password
   server_port: 443
   ssl_certificate: /ssl/fullchain.pem
   ssl_key: /ssl/privkey.pem
