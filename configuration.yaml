@@ -88,15 +88,17 @@ sensor:
       - ping
       - download
       - upload
-  - platform: wunderground
-    api_key: !secret wunderground_api_key
+  - platform: darksky
+    api_key: !secret darksky_api_key
+    forecast:
+      - 0
+    hourly_forecast:
+      - 0
+      - 1
     monitored_conditions:
-      - temp_high_1d_f
-      - temp_f
-      - temp_low_1d_f
-      - precip_1d
-      - precip_1d_mm
-      - alerts
+      - summary
+      - icon
+      - temperature
   - platform: miflora                          
     mac: !secret miflora_mac
 
