@@ -2,14 +2,14 @@ hvac_cool:
   name: Cooling Schedule
   entities:
     - automation.2100_set_to_70
-    - automation.weekdays__0830_set_to_74
-    - automation.weekends__1030_set_to_74
+    - automation.weekdays_0830_set_to_74
+    - automation.weekends_1030_set_to_74
 hvac_heat:
   name: Heating Schedule
   entities:
     - automation.2100_set_to_55
-    - automation.weekdays__0830_set_to_66
-    - automation.weekends__1030_set_to_66
+    - automation.weekdays_0830_set_to_66
+    - automation.weekends_1030_set_to_66
 hvac_group:
   name: Temp Schedule
   view: yes
